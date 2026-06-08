@@ -6,7 +6,7 @@ dotenv.config();
 
 (async () => {
     const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         args: ['--no-sandbox', '--window-size=1280,800'],
         userDataDir: './.browser_session'
     });
