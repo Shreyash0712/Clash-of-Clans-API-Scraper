@@ -1,0 +1,1630 @@
+{
+  "WarLeagueList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/WarLeague"
+    }
+  },
+  "WarLeague": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "id": {
+        "type": "integer"
+      }
+    }
+  },
+  "JsonLocalizedName": {
+    "type": "object"
+  },
+  "ServiceVersion": {
+    "type": "object",
+    "properties": {
+      "major": {
+        "type": "integer"
+      },
+      "minor": {
+        "type": "integer"
+      },
+      "content": {
+        "type": "integer"
+      }
+    }
+  },
+  "LabelList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/Label"
+    }
+  },
+  "Label": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "iconUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "ClanCapitalRaidSeasons": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanCapitalRaidSeason"
+    }
+  },
+  "ClanCapitalRaidSeason": {
+    "type": "object",
+    "properties": {
+      "defenseLog": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonDefenseLogList"
+      },
+      "attackLog": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonAttackLogList"
+      },
+      "state": {
+        "type": "string"
+      },
+      "startTime": {
+        "type": "string"
+      },
+      "endTime": {
+        "type": "string"
+      },
+      "capitalTotalLoot": {
+        "type": "integer"
+      },
+      "raidsCompleted": {
+        "type": "integer"
+      },
+      "totalAttacks": {
+        "type": "integer"
+      },
+      "enemyDistrictsDestroyed": {
+        "type": "integer"
+      },
+      "offensiveReward": {
+        "type": "integer"
+      },
+      "defensiveReward": {
+        "type": "integer"
+      },
+      "members": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonMemberList"
+      }
+    }
+  },
+  "ClanCapitalRaidSeasonMemberList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanCapitalRaidSeasonMember"
+    }
+  },
+  "ClanCapitalRaidSeasonMember": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "attacks": {
+        "type": "integer"
+      },
+      "attackLimit": {
+        "type": "integer"
+      },
+      "bonusAttackLimit": {
+        "type": "integer"
+      },
+      "capitalResourcesLooted": {
+        "type": "integer"
+      }
+    }
+  },
+  "ClanCapitalRaidSeasonAttackLogList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanCapitalRaidSeasonAttackLogEntry"
+    }
+  },
+  "ClanCapitalRaidSeasonAttackLogEntry": {
+    "type": "object",
+    "properties": {
+      "defender": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonClanInfo"
+      },
+      "attackCount": {
+        "type": "integer"
+      },
+      "districtCount": {
+        "type": "integer"
+      },
+      "districtsDestroyed": {
+        "type": "integer"
+      },
+      "districts": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonDistrictList"
+      }
+    }
+  },
+  "ClanCapitalRaidSeasonDistrictList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanCapitalRaidSeasonDistrict"
+    }
+  },
+  "ClanCapitalRaidSeasonDistrict": {
+    "type": "object",
+    "properties": {
+      "stars": {
+        "type": "integer"
+      },
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "destructionPercent": {
+        "type": "integer"
+      },
+      "attackCount": {
+        "type": "integer"
+      },
+      "totalLooted": {
+        "type": "integer"
+      },
+      "attacks": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonAttackList"
+      },
+      "districtHallLevel": {
+        "type": "integer"
+      }
+    }
+  },
+  "ClanCapitalRaidSeasonAttackList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanCapitalRaidSeasonAttack"
+    }
+  },
+  "ClanCapitalRaidSeasonAttack": {
+    "type": "object",
+    "properties": {
+      "attacker": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonAttacker"
+      },
+      "destructionPercent": {
+        "type": "integer"
+      },
+      "stars": {
+        "type": "integer"
+      }
+    }
+  },
+  "ClanCapitalRaidSeasonAttacker": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      }
+    }
+  },
+  "ClanCapitalRaidSeasonClanInfo": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "level": {
+        "type": "integer"
+      },
+      "badgeUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "ClanCapitalRaidSeasonDefenseLogList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanCapitalRaidSeasonDefenseLogEntry"
+    }
+  },
+  "ClanCapitalRaidSeasonDefenseLogEntry": {
+    "type": "object",
+    "properties": {
+      "attacker": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonClanInfo"
+      },
+      "attackCount": {
+        "type": "integer"
+      },
+      "districtCount": {
+        "type": "integer"
+      },
+      "districtsDestroyed": {
+        "type": "integer"
+      },
+      "districts": {
+        "$ref": "#/definitions/ClanCapitalRaidSeasonDistrictList"
+      }
+    }
+  },
+  "Location": {
+    "type": "object",
+    "properties": {
+      "localizedName": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "isCountry": {
+        "type": "boolean"
+      },
+      "countryCode": {
+        "type": "string"
+      }
+    }
+  },
+  "Replay": {
+    "type": "object",
+    "properties": {
+      "replayData": {
+        "$ref": "#/definitions/JsonNode"
+      },
+      "replayTag": {
+        "type": "string"
+      }
+    }
+  },
+  "JsonNode": {
+    "type": "object"
+  },
+  "ClanCapitalRankingList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanCapitalRanking"
+    }
+  },
+  "ClanCapitalRanking": {
+    "type": "object",
+    "properties": {
+      "clanCapitalPoints": {
+        "type": "integer"
+      },
+      "clanPoints": {
+        "type": "integer"
+      }
+    }
+  },
+  "WarStatusList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/WarStatus"
+    }
+  },
+  "WarStatus": {
+    "type": "object",
+    "properties": {
+      "clanTag": {
+        "type": "string"
+      },
+      "statusCode": {
+        "type": "integer"
+      },
+      "enemyClanTag": {
+        "type": "string"
+      },
+      "warState": {
+        "type": "string",
+        "enum": [
+          "CLAN_NOT_FOUND",
+          "ACCESS_DENIED",
+          "NOT_IN_WAR",
+          "IN_MATCHMAKING",
+          "ENTER_WAR",
+          "MATCHED",
+          "PREPARATION",
+          "WAR",
+          "IN_WAR",
+          "ENDED"
+        ]
+      },
+      "timestamp": {
+        "type": "string"
+      }
+    }
+  },
+  "LocationList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/Location"
+    }
+  },
+  "ClanMemberList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanMember"
+    }
+  },
+  "ClanMember": {
+    "type": "object",
+    "properties": {
+      "league": {
+        "$ref": "#/definitions/League"
+      },
+      "leagueTier": {
+        "$ref": "#/definitions/LeagueTier"
+      },
+      "builderBaseLeague": {
+        "$ref": "#/definitions/BuilderBaseLeague"
+      },
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "NOT_MEMBER",
+          "MEMBER",
+          "LEADER",
+          "ADMIN",
+          "COLEADER"
+        ]
+      },
+      "townHallLevel": {
+        "type": "integer"
+      },
+      "expLevel": {
+        "type": "integer"
+      },
+      "clanRank": {
+        "type": "integer"
+      },
+      "previousClanRank": {
+        "type": "integer"
+      },
+      "donations": {
+        "type": "integer"
+      },
+      "donationsReceived": {
+        "type": "integer"
+      },
+      "trophies": {
+        "type": "integer"
+      },
+      "builderBaseTrophies": {
+        "type": "integer"
+      },
+      "playerHouse": {
+        "$ref": "#/definitions/PlayerHouse"
+      }
+    }
+  },
+  "PlayerHouse": {
+    "type": "object",
+    "properties": {
+      "elements": {
+        "$ref": "#/definitions/PlayerHouseElementList"
+      }
+    }
+  },
+  "PlayerHouseElementList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/PlayerHouseElement"
+    }
+  },
+  "PlayerHouseElement": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "GROUND",
+          "ROOF",
+          "FOOT",
+          "DECO"
+        ]
+      }
+    }
+  },
+  "BuilderBaseLeague": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "id": {
+        "type": "integer"
+      }
+    }
+  },
+  "LeagueTier": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "iconUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "League": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "iconUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "LeagueSeasonResultList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/LeagueSeasonResult"
+    }
+  },
+  "LeagueSeasonResult": {
+    "type": "object",
+    "properties": {
+      "leagueSeasonId": {
+        "$ref": "#/definitions/long"
+      },
+      "leagueTrophies": {
+        "type": "integer"
+      },
+      "leagueTierId": {
+        "type": "integer"
+      },
+      "placement": {
+        "type": "integer"
+      },
+      "attackWins": {
+        "type": "integer"
+      },
+      "attackLosses": {
+        "type": "integer"
+      },
+      "attackStars": {
+        "type": "integer"
+      },
+      "defenseWins": {
+        "type": "integer"
+      },
+      "defenseLosses": {
+        "type": "integer"
+      },
+      "defenseStars": {
+        "type": "integer"
+      },
+      "maxBattles": {
+        "type": "integer"
+      }
+    }
+  },
+  "long": {
+    "type": "object"
+  },
+  "LeagueSeasonList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/LeagueSeason"
+    }
+  },
+  "LeagueSeason": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      }
+    }
+  },
+  "LeagueGroup": {
+    "type": "object",
+    "properties": {
+      "members": {
+        "$ref": "#/definitions/LeagueGroupMemberList"
+      },
+      "attackLogs": {
+        "$ref": "#/definitions/LeagueGroupBattleLogEntryList"
+      },
+      "defenseLogs": {
+        "$ref": "#/definitions/LeagueGroupBattleLogEntryList"
+      }
+    }
+  },
+  "LeagueGroupBattleLogEntryList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/LeagueBattleLogEntry"
+    }
+  },
+  "LeagueBattleLogEntry": {
+    "type": "object",
+    "properties": {
+      "opponentPlayerTag": {
+        "type": "string"
+      },
+      "opponentName": {
+        "type": "string"
+      },
+      "stars": {
+        "type": "integer"
+      },
+      "destructionPercentage": {
+        "type": "integer"
+      },
+      "trophies": {
+        "type": "integer"
+      },
+      "creationTime": {
+        "type": "string"
+      }
+    }
+  },
+  "LeagueGroupMemberList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/LeagueGroupMember"
+    }
+  },
+  "LeagueGroupMember": {
+    "type": "object",
+    "properties": {
+      "playerTag": {
+        "type": "string"
+      },
+      "playerName": {
+        "type": "string"
+      },
+      "clanTag": {
+        "type": "string"
+      },
+      "clanName": {
+        "type": "string"
+      },
+      "leagueTrophies": {
+        "type": "integer"
+      },
+      "attackWinCount": {
+        "type": "integer"
+      },
+      "attackLoseCount": {
+        "type": "integer"
+      },
+      "defenseWinCount": {
+        "type": "integer"
+      },
+      "defenseLoseCount": {
+        "type": "integer"
+      }
+    }
+  },
+  "BuilderBaseLeagueList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/BuilderBaseLeague"
+    }
+  },
+  "VerifyTokenRequest": {
+    "type": "object",
+    "properties": {
+      "token": {
+        "type": "string"
+      }
+    }
+  },
+  "VerifyTokenResponse": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "token": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      }
+    }
+  },
+  "Clan": {
+    "type": "object",
+    "properties": {
+      "memberList": {
+        "$ref": "#/definitions/ClanMemberList"
+      },
+      "warLeague": {
+        "$ref": "#/definitions/WarLeague"
+      },
+      "capitalLeague": {
+        "$ref": "#/definitions/CapitalLeague"
+      },
+      "tag": {
+        "type": "string"
+      },
+      "clanBuilderBasePoints": {
+        "type": "integer"
+      },
+      "clanCapitalPoints": {
+        "type": "integer"
+      },
+      "requiredTrophies": {
+        "type": "integer"
+      },
+      "requiredBuilderBaseTrophies": {
+        "type": "integer"
+      },
+      "requiredTownhallLevel": {
+        "type": "integer"
+      },
+      "isFamilyFriendly": {
+        "type": "boolean"
+      },
+      "warFrequency": {
+        "type": "string",
+        "enum": [
+          "UNKNOWN",
+          "ALWAYS",
+          "MORE_THAN_ONCE_PER_WEEK",
+          "ONCE_PER_WEEK",
+          "LESS_THAN_ONCE_PER_WEEK",
+          "NEVER",
+          "ANY"
+        ]
+      },
+      "isWarLogPublic": {
+        "type": "boolean"
+      },
+      "chatLanguage": {
+        "$ref": "#/definitions/Language"
+      },
+      "clanLevel": {
+        "type": "integer"
+      },
+      "warWinStreak": {
+        "type": "integer"
+      },
+      "warWins": {
+        "type": "integer"
+      },
+      "warTies": {
+        "type": "integer"
+      },
+      "warLosses": {
+        "type": "integer"
+      },
+      "clanPoints": {
+        "type": "integer"
+      },
+      "labels": {
+        "$ref": "#/definitions/LabelList"
+      },
+      "name": {
+        "type": "string"
+      },
+      "location": {
+        "$ref": "#/definitions/Location"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "OPEN",
+          "INVITE_ONLY",
+          "CLOSED"
+        ]
+      },
+      "members": {
+        "type": "integer"
+      },
+      "description": {
+        "type": "string"
+      },
+      "clanCapital": {
+        "$ref": "#/definitions/ClanCapital"
+      },
+      "badgeUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "ClanCapital": {
+    "type": "object",
+    "properties": {
+      "capitalHallLevel": {
+        "type": "integer"
+      },
+      "districts": {
+        "$ref": "#/definitions/ClanDistrictDataList"
+      }
+    }
+  },
+  "ClanDistrictDataList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanDistrictData"
+    }
+  },
+  "ClanDistrictData": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "districtHallLevel": {
+        "type": "integer"
+      }
+    }
+  },
+  "Language": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "languageCode": {
+        "type": "string"
+      }
+    }
+  },
+  "CapitalLeague": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "id": {
+        "type": "integer"
+      }
+    }
+  },
+  "ClanWar": {
+    "type": "object",
+    "properties": {
+      "clan": {
+        "$ref": "#/definitions/WarClan"
+      },
+      "teamSize": {
+        "type": "integer"
+      },
+      "attacksPerMember": {
+        "type": "integer"
+      },
+      "battleModifier": {
+        "type": "string",
+        "enum": [
+          "NONE",
+          "HARD_MODE"
+        ]
+      },
+      "opponent": {
+        "$ref": "#/definitions/WarClan"
+      },
+      "startTime": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string",
+        "enum": [
+          "CLAN_NOT_FOUND",
+          "ACCESS_DENIED",
+          "NOT_IN_WAR",
+          "IN_MATCHMAKING",
+          "ENTER_WAR",
+          "MATCHED",
+          "PREPARATION",
+          "WAR",
+          "IN_WAR",
+          "ENDED"
+        ]
+      },
+      "endTime": {
+        "type": "string"
+      },
+      "preparationStartTime": {
+        "type": "string"
+      }
+    }
+  },
+  "WarClan": {
+    "type": "object",
+    "properties": {
+      "destructionPercentage": {
+        "$ref": "#/definitions/Float"
+      },
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "badgeUrls": {
+        "type": "object"
+      },
+      "clanLevel": {
+        "type": "integer"
+      },
+      "attacks": {
+        "type": "integer"
+      },
+      "stars": {
+        "type": "integer"
+      },
+      "expEarned": {
+        "type": "integer"
+      },
+      "members": {
+        "$ref": "#/definitions/ClanWarMemberList"
+      }
+    }
+  },
+  "ClanWarMemberList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanWarMember"
+    }
+  },
+  "ClanWarMember": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "mapPosition": {
+        "type": "integer"
+      },
+      "townhallLevel": {
+        "type": "integer"
+      },
+      "opponentAttacks": {
+        "type": "integer"
+      },
+      "bestOpponentAttack": {
+        "$ref": "#/definitions/ClanWarAttack"
+      },
+      "attacks": {
+        "$ref": "#/definitions/ClanWarAttackList"
+      }
+    }
+  },
+  "ClanWarAttackList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanWarAttack"
+    }
+  },
+  "ClanWarAttack": {
+    "type": "object",
+    "properties": {
+      "order": {
+        "type": "integer"
+      },
+      "attackerTag": {
+        "type": "string"
+      },
+      "defenderTag": {
+        "type": "string"
+      },
+      "stars": {
+        "type": "integer"
+      },
+      "destructionPercentage": {
+        "type": "integer"
+      },
+      "duration": {
+        "type": "integer"
+      }
+    }
+  },
+  "Float": {
+    "type": "object"
+  },
+  "BattleLogEntryList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/BattleLogEntry"
+    }
+  },
+  "BattleLogEntry": {
+    "type": "object",
+    "properties": {
+      "battleType": {
+        "type": "string",
+        "enum": [
+          "HOME_VILLAGE",
+          "RANKED",
+          "LEGEND"
+        ]
+      },
+      "attack": {
+        "type": "boolean"
+      },
+      "armyShareCode": {
+        "type": "string"
+      },
+      "opponentPlayerTag": {
+        "type": "string"
+      },
+      "stars": {
+        "type": "integer"
+      },
+      "destructionPercentage": {
+        "type": "integer"
+      },
+      "lootedResources": {
+        "$ref": "#/definitions/BattleLogResourceList"
+      },
+      "extraLootedResources": {
+        "$ref": "#/definitions/BattleLogResourceList"
+      },
+      "availableLoot": {
+        "$ref": "#/definitions/BattleLogResourceList"
+      }
+    }
+  },
+  "BattleLogResourceList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/Resource"
+    }
+  },
+  "Resource": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "amount": {
+        "$ref": "#/definitions/long"
+      }
+    }
+  },
+  "ClanBuilderBaseRankingList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanBuilderBaseRanking"
+    }
+  },
+  "ClanBuilderBaseRanking": {
+    "type": "object",
+    "properties": {
+      "clanBuilderBasePoints": {
+        "type": "integer"
+      },
+      "clanPoints": {
+        "type": "integer"
+      }
+    }
+  },
+  "PlayerBuilderBaseRankingList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/PlayerBuilderBaseRanking"
+    }
+  },
+  "PlayerBuilderBaseRanking": {
+    "type": "object",
+    "properties": {
+      "clan": {
+        "$ref": "#/definitions/PlayerRankingClan"
+      },
+      "builderBaseLeague": {
+        "$ref": "#/definitions/BuilderBaseLeague"
+      },
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "expLevel": {
+        "type": "integer"
+      },
+      "rank": {
+        "type": "integer"
+      },
+      "previousRank": {
+        "type": "integer"
+      },
+      "builderBaseTrophies": {
+        "type": "integer"
+      }
+    }
+  },
+  "PlayerRankingClan": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "badgeUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "ClanList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/Clan"
+    }
+  },
+  "PlayerRankingList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/PlayerRanking"
+    }
+  },
+  "PlayerRanking": {
+    "type": "object",
+    "properties": {
+      "clan": {
+        "$ref": "#/definitions/PlayerRankingClan"
+      },
+      "league": {
+        "$ref": "#/definitions/League"
+      },
+      "leagueTier": {
+        "$ref": "#/definitions/LeagueTier"
+      },
+      "attackWins": {
+        "type": "integer"
+      },
+      "defenseWins": {
+        "type": "integer"
+      },
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "expLevel": {
+        "type": "integer"
+      },
+      "rank": {
+        "type": "integer"
+      },
+      "previousRank": {
+        "type": "integer"
+      },
+      "trophies": {
+        "type": "integer"
+      }
+    }
+  },
+  "LeagueList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/League"
+    }
+  },
+  "LeagueTierList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/LeagueTier"
+    }
+  },
+  "ClanWarLog": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanWarLogEntry"
+    }
+  },
+  "ClanWarLogEntry": {
+    "type": "object",
+    "properties": {
+      "clan": {
+        "$ref": "#/definitions/WarClan"
+      },
+      "teamSize": {
+        "type": "integer"
+      },
+      "attacksPerMember": {
+        "type": "integer"
+      },
+      "battleModifier": {
+        "type": "string",
+        "enum": [
+          "NONE",
+          "HARD_MODE"
+        ]
+      },
+      "opponent": {
+        "$ref": "#/definitions/WarClan"
+      },
+      "endTime": {
+        "type": "string"
+      },
+      "result": {
+        "type": "string",
+        "enum": [
+          "LOSE",
+          "WIN",
+          "TIE"
+        ]
+      }
+    }
+  },
+  "GoldPassSeason": {
+    "type": "object",
+    "properties": {
+      "startTime": {
+        "type": "string"
+      },
+      "endTime": {
+        "type": "string"
+      }
+    }
+  },
+  "DeepLinkCreationRequest": {
+    "type": "object",
+    "properties": {
+      "playerTags": {
+        "$ref": "#/definitions/StringList"
+      },
+      "clanTag": {
+        "type": "string"
+      },
+      "opponentClanTag": {
+        "type": "string"
+      }
+    }
+  },
+  "StringList": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    }
+  },
+  "String": {
+    "type": "object"
+  },
+  "DeepLinkCreationResponse": {
+    "type": "object",
+    "properties": {
+      "link": {
+        "type": "string"
+      }
+    }
+  },
+  "ClanWarLeagueGroup": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string",
+        "enum": [
+          "GROUP_NOT_FOUND",
+          "NOT_IN_WAR",
+          "PREPARATION",
+          "WAR",
+          "ENDED"
+        ]
+      },
+      "season": {
+        "type": "string"
+      },
+      "clans": {
+        "$ref": "#/definitions/ClanWarLeagueClanList"
+      },
+      "rounds": {
+        "$ref": "#/definitions/ClanWarLeagueRoundList"
+      }
+    }
+  },
+  "ClanWarLeagueRoundList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanWarLeagueRound"
+    }
+  },
+  "ClanWarLeagueRound": {
+    "type": "object",
+    "properties": {
+      "warTags": {
+        "$ref": "#/definitions/StringList"
+      }
+    }
+  },
+  "ClanWarLeagueClanList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanWarLeagueClan"
+    }
+  },
+  "ClanWarLeagueClan": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "clanLevel": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "members": {
+        "$ref": "#/definitions/ClanWarLeagueClanMemberList"
+      },
+      "badgeUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "ClanWarLeagueClanMemberList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanWarLeagueClanMember"
+    }
+  },
+  "ClanWarLeagueClanMember": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "townHallLevel": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      }
+    }
+  },
+  "ClanRankingList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/ClanRanking"
+    }
+  },
+  "ClanRanking": {
+    "type": "object",
+    "properties": {
+      "clanLevel": {
+        "type": "integer"
+      },
+      "clanPoints": {
+        "type": "integer"
+      },
+      "location": {
+        "$ref": "#/definitions/Location"
+      },
+      "members": {
+        "type": "integer"
+      },
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "rank": {
+        "type": "integer"
+      },
+      "previousRank": {
+        "type": "integer"
+      },
+      "badgeUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "CapitalLeagueList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/CapitalLeague"
+    }
+  },
+  "Player": {
+    "type": "object",
+    "properties": {
+      "clan": {
+        "$ref": "#/definitions/PlayerClan"
+      },
+      "league": {
+        "$ref": "#/definitions/League"
+      },
+      "leagueTier": {
+        "$ref": "#/definitions/LeagueTier"
+      },
+      "builderBaseLeague": {
+        "$ref": "#/definitions/BuilderBaseLeague"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "NOT_MEMBER",
+          "MEMBER",
+          "LEADER",
+          "ADMIN",
+          "COLEADER"
+        ]
+      },
+      "warPreference": {
+        "type": "string",
+        "enum": [
+          "OUT",
+          "IN"
+        ]
+      },
+      "attackWins": {
+        "type": "integer"
+      },
+      "defenseWins": {
+        "type": "integer"
+      },
+      "townHallLevel": {
+        "type": "integer"
+      },
+      "townHallWeaponLevel": {
+        "type": "integer"
+      },
+      "legendStatistics": {
+        "$ref": "#/definitions/PlayerLegendStatistics"
+      },
+      "troops": {
+        "$ref": "#/definitions/PlayerItemLevelList"
+      },
+      "heroes": {
+        "$ref": "#/definitions/PlayerItemLevelList"
+      },
+      "heroEquipment": {
+        "$ref": "#/definitions/PlayerItemLevelList"
+      },
+      "spells": {
+        "$ref": "#/definitions/PlayerItemLevelList"
+      },
+      "labels": {
+        "$ref": "#/definitions/LabelList"
+      },
+      "tag": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "expLevel": {
+        "type": "integer"
+      },
+      "trophies": {
+        "type": "integer"
+      },
+      "bestTrophies": {
+        "type": "integer"
+      },
+      "donations": {
+        "type": "integer"
+      },
+      "donationsReceived": {
+        "type": "integer"
+      },
+      "builderHallLevel": {
+        "type": "integer"
+      },
+      "builderBaseTrophies": {
+        "type": "integer"
+      },
+      "bestBuilderBaseTrophies": {
+        "type": "integer"
+      },
+      "warStars": {
+        "type": "integer"
+      },
+      "achievements": {
+        "$ref": "#/definitions/PlayerAchievementProgressList"
+      },
+      "clanCapitalContributions": {
+        "type": "integer"
+      },
+      "playerHouse": {
+        "$ref": "#/definitions/PlayerHouse"
+      },
+      "currentLeagueGroupTag": {
+        "type": "string"
+      },
+      "currentLeagueSeasonId": {
+        "$ref": "#/definitions/Long"
+      },
+      "previousLeagueGroupTag": {
+        "type": "string"
+      },
+      "previousLeagueSeasonId": {
+        "$ref": "#/definitions/Long"
+      }
+    }
+  },
+  "Long": {
+    "type": "object"
+  },
+  "PlayerAchievementProgressList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/PlayerAchievementProgress"
+    }
+  },
+  "PlayerAchievementProgress": {
+    "type": "object",
+    "properties": {
+      "stars": {
+        "type": "integer"
+      },
+      "value": {
+        "type": "integer"
+      },
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "target": {
+        "type": "integer"
+      },
+      "info": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "completionInfo": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "village": {
+        "type": "string",
+        "enum": [
+          "HOME_VILLAGE",
+          "BUILDER_BASE",
+          "CLAN_CAPITAL"
+        ]
+      }
+    }
+  },
+  "PlayerItemLevelList": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/PlayerItemLevel"
+    }
+  },
+  "PlayerItemLevel": {
+    "type": "object",
+    "properties": {
+      "level": {
+        "type": "integer"
+      },
+      "name": {
+        "$ref": "#/definitions/JsonLocalizedName"
+      },
+      "maxLevel": {
+        "type": "integer"
+      },
+      "village": {
+        "type": "string",
+        "enum": [
+          "HOME_VILLAGE",
+          "BUILDER_BASE",
+          "CLAN_CAPITAL"
+        ]
+      },
+      "superTroopIsActive": {
+        "type": "boolean"
+      },
+      "equipment": {
+        "$ref": "#/definitions/PlayerItemLevelList"
+      }
+    }
+  },
+  "PlayerLegendStatistics": {
+    "type": "object",
+    "properties": {
+      "legendTrophies": {
+        "type": "integer"
+      },
+      "previousBuilderBaseSeason": {
+        "$ref": "#/definitions/LegendLeagueTournamentSeasonResult"
+      },
+      "bestBuilderBaseSeason": {
+        "$ref": "#/definitions/LegendLeagueTournamentSeasonResult"
+      },
+      "bestSeason": {
+        "$ref": "#/definitions/LegendLeagueTournamentSeasonResult"
+      },
+      "currentSeason": {
+        "$ref": "#/definitions/LegendLeagueTournamentSeasonResult"
+      },
+      "previousSeason": {
+        "$ref": "#/definitions/LegendLeagueTournamentSeasonResult"
+      }
+    }
+  },
+  "LegendLeagueTournamentSeasonResult": {
+    "type": "object",
+    "properties": {
+      "trophies": {
+        "type": "integer"
+      },
+      "id": {
+        "type": "string"
+      },
+      "rank": {
+        "type": "integer"
+      }
+    }
+  },
+  "PlayerClan": {
+    "type": "object",
+    "properties": {
+      "tag": {
+        "type": "string"
+      },
+      "clanLevel": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "badgeUrls": {
+        "type": "object"
+      }
+    }
+  },
+  "ClientError": {
+    "type": "object",
+    "properties": {
+      "reason": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "detail": {
+        "type": "object"
+      }
+    }
+  }
+}

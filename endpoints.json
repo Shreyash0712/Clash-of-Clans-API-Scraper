@@ -1,0 +1,212 @@
+[
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/leaguetiers/{leagueTierId}",
+    "description": "Get league tier information"
+  },
+  {
+    "category": "clans",
+    "method": "GET",
+    "path": "/clans/{clanTag}/currentwar/leaguegroup",
+    "description": "Retrieve information about clan's current clan war league group"
+  },
+  {
+    "category": "players",
+    "method": "GET",
+    "path": "/players/{playerTag}",
+    "description": "Get player information"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/capitalleagues",
+    "description": "List capital leagues"
+  },
+  {
+    "category": "locations",
+    "method": "GET",
+    "path": "/locations/{locationId}/rankings/clans",
+    "description": "Get clan rankings for a specific location"
+  },
+  {
+    "category": "clans",
+    "method": "GET",
+    "path": "/clanwarleagues/wars/{warTag}",
+    "description": "Retrieve information about individual clan war league war"
+  },
+  {
+    "category": "goldpass",
+    "method": "GET",
+    "path": "/goldpass/seasons/current",
+    "description": "Get information about the current gold pass season."
+  },
+  {
+    "category": "clans",
+    "method": "GET",
+    "path": "/clans/{clanTag}/warlog",
+    "description": "Retrieve clan's clan war log"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/leaguetiers",
+    "description": "List league tiers"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/leagues",
+    "description": "List leagues"
+  },
+  {
+    "category": "locations",
+    "method": "GET",
+    "path": "/locations/{locationId}/rankings/players",
+    "description": "Get player rankings for a specific location"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/leagues/{leagueId}/seasons/{seasonId}",
+    "description": "Get league season rankings"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/capitalleagues/{leagueId}",
+    "description": "Get capital league information"
+  },
+  {
+    "category": "clans",
+    "method": "GET",
+    "path": "/clans",
+    "description": "Search clans"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/builderbaseleagues/{leagueId}",
+    "description": "Get Builder Base league information"
+  },
+  {
+    "category": "locations",
+    "method": "GET",
+    "path": "/locations/{locationId}/rankings/players-builder-base",
+    "description": "Get player Builder Base rankings for a specific location"
+  },
+  {
+    "category": "locations",
+    "method": "GET",
+    "path": "/locations/{locationId}/rankings/clans-builder-base",
+    "description": "Get clan Builder Base rankings for a specific location"
+  },
+  {
+    "category": "players",
+    "method": "GET",
+    "path": "/players/{playerTag}/battlelog",
+    "description": "Get player battle log"
+  },
+  {
+    "category": "clans",
+    "method": "GET",
+    "path": "/clans/{clanTag}/currentwar",
+    "description": "Retrieve information about clan's current clan war"
+  },
+  {
+    "category": "clans",
+    "method": "GET",
+    "path": "/clans/{clanTag}",
+    "description": "Get clan information"
+  },
+  {
+    "category": "players",
+    "method": "POST",
+    "path": "/players/{playerTag}/verifytoken",
+    "description": "Verify player API token that can be found from the game settings."
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/builderbaseleagues",
+    "description": "List Builder Base leagues"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/leagues/{leagueId}",
+    "description": "Get league information"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/leaguegroup/{leagueGroupTag}/{leagueSeasonId}",
+    "description": "Get ranked battle league group information for season and player"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/leagues/{leagueId}/seasons",
+    "description": "Get league seasons"
+  },
+  {
+    "category": "players",
+    "method": "GET",
+    "path": "/players/{playerTag}/leaguehistory",
+    "description": "Get player league history"
+  },
+  {
+    "category": "clans",
+    "method": "GET",
+    "path": "/clans/{clanTag}/members",
+    "description": "List clan members"
+  },
+  {
+    "category": "locations",
+    "method": "GET",
+    "path": "/locations",
+    "description": "List locations"
+  },
+  {
+    "category": "labels",
+    "method": "GET",
+    "path": "/labels/players",
+    "description": "List player labels"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/warleagues/{leagueId}",
+    "description": "Get war league information"
+  },
+  {
+    "category": "locations",
+    "method": "GET",
+    "path": "/locations/{locationId}/rankings/capitals",
+    "description": "Get capital rankings for a specific location"
+  },
+  {
+    "category": "locations",
+    "method": "GET",
+    "path": "/locations/{locationId}",
+    "description": "Get location information"
+  },
+  {
+    "category": "clans",
+    "method": "GET",
+    "path": "/clans/{clanTag}/capitalraidseasons",
+    "description": "Retrieve clan's capital raid seasons"
+  },
+  {
+    "category": "labels",
+    "method": "GET",
+    "path": "/labels/clans",
+    "description": "List clan labels"
+  },
+  {
+    "category": "leagues",
+    "method": "GET",
+    "path": "/warleagues",
+    "description": "List war leagues"
+  }
+]
